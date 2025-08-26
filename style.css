@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    /* flex-direction:row-reverse; */
+    justify-content: space-around;
+    background: #222;
+    padding: 10px;
+
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size:18px;
+  
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.box{
+    background: #ddd;
+    padding:20px;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
